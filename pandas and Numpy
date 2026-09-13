@@ -1,0 +1,44 @@
+
+my_dict = {
+    "Object": "Car",
+    "Model": "Toyota",
+    "country": "Japan",
+    "Year": 1995
+}
+print(my_dict["Year"], ["Model"])
+print(my_dict["country"])
+
+#Dictionary Data types >>>>>>>> it contains all kinds of data types but do not allow duplicates
+
+my_dict = {
+    "Object": "Car",
+    "Model": "Toyota",
+    "country": "Japan",
+    "England": False,
+    "Year": 1995,
+    "Year": 2026,
+    "colors": ["red", "green", "blue"]
+}
+print(my_dict)
+print(len(my_dict))
+
+"""Accessing Items
+You can access the items of a dictionary by referring to its key name, inside square brackets:
+
+Example
+Get the value of the "model" key:"""
+my_dict = {
+    "Object": "Car",
+    "Model": "Toyota",
+    "country": "Japan",
+    "England": False,
+    "Year": 1995,
+    "Year": 2026,
+    "colors": ["red", "green", "blue"]
+}
+x = my_dict.get("Model") #Using the get() method, this will return the value in model == Toyota
+print(x)
+y = my_dict.keys() #returns all keys in the dictionary
+print(y)
+z = my_dict.values() #Returns all values in the dictionary
+print(z)
